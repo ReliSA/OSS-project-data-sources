@@ -1,14 +1,14 @@
 
-Code Hosting Platforms data and Scraper
+Code Hosting Platforms Data and Scraper
 =======================================
 
-An information repository about data on projects hosted on Code Hosting Platforms (CHP) like guthub, source forge etc., and a tool to retrieve this data and provide it in a comma-separated values (CSV) format.
+An [information repository about data on projects hosted on Code Hosting Platforms (CHP)](wiki/) like github, source forge etc., and a [tool to retrieve this data](src/) and provide it in a comma-separated values (CSV) format.
 
 The software in this repository is distributed under the MIT licence.  The `LICENSE` file is available in the root folder.
 
 Copyright 2022 University of West Bohemia
 
-Authors: Premek Brada <brada@kiv.zcu.cz>, Petr Picha, Zhanel Mukanova (texts under the `wiki` folder).
+Authors: Premek Brada, Petr Picha, Zhanel Mukanova (texts under the `wiki` folder).
 
 
 The `chps` Tool Usage
