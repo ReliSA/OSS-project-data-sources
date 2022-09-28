@@ -1,0 +1,4 @@
+platform,id,owner,repo-name,created-at,last-active-at,url,repo-url,license,commits,contributors,issues-all,issues-open,issues-closed,stars,forks,releases
+gitlab,143,Leberwurscht,TearDownWalls,2012-10-15T17:26:53.000Z,2021-04-20T06:42:51.315Z,https://gitlab.com/leberwurscht/teardownwalls,https://gitlab.com/leberwurscht/teardownwalls.git,,0,1,1,0,1,,5,
+gitlab,450,Phil Hagelberg,Leiningen,2012-12-12T21:30:14.000Z,2022-09-05T17:27:48.347Z,https://gitlab.com/technomancy/leiningen,https://gitlab.com/technomancy/leiningen.git,Other,"4,983",20,0,0,0,,1,
+gitlab,527,Jonan,K,2012-12-18T17:33:03.000Z,2021-02-26T15:53:13.705Z,https://gitlab.com/jonan/k,https://gitlab.com/jonan/k.git,,0,4,0,0,0,0,1,
