@@ -224,7 +224,7 @@ def get_json(url: str, token: str, *, use_mock = False):
 
     if (use_mock):
         print("get_json: using mock project data for testing", file=sys.stderr)
-        return read_json()
+        return (read_json(), {})
     
     json_data : str = ""
 
