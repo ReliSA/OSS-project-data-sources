@@ -44,7 +44,7 @@ if __name__ == "__main__":
         print("chps: no scraper was asked to be run, exiting.", file=sys.stderr)
         sys.exit(1)
         
-    modules = mlist.split()
+    modules = set(mlist.split())
     # import and run the configured scrapers
     for scraper in modules:
         try:
