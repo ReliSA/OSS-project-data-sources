@@ -1,12 +1,12 @@
 Bitbucket
 =========
 
-V Bitbucketu neexistuje funkce pro prohlížení public projektů.
+Bitbucket does not have a function for viewing public projects.
 
 **Web:** https://bitbucket.org/
 
 **Version control system:** GIT
 
-**Open source projekty:**
+**Open source projects:**
 
 * [National Center for Supercomputing Applications (NCSA)](https://opensource.ncsa.illinois.edu/bitbucket/repos?visibility=public)
