@@ -27,10 +27,10 @@ Apache projects
 |estimates|❌|||
 |planned/real deadline|❌|||
 |subtasks/related issues|✅|Issue Links in Jira||
-|paring of commits|❔|||
+|pairing of commits|❔|||
 |issue change history including people assignment|✅|Bugzilla and Jira||
 |custom categories/tags|✅|Jira labels||
-|status configuration/workflow|❔|maybe on GitHubu||
+|status configuration/workflow|❔|maybe on GitHub||
 |iterations/phases/milestones/releases|❔|||
 |roles or other characteristics of people|❔|||
 
@@ -39,7 +39,7 @@ Apache projects
 |Name|Existence|Comment|Link|
 |---|---|---|---|
 |git flow|❔|||
-|complete branch history|✅|on gitbox and githubu|https://gitbox.apache.org/repos/asf?p=accumulo.git;a=shortlog;h=refs/heads/1.10|
+|complete branch history|✅|on gitbox and github|https://gitbox.apache.org/repos/asf?p=accumulo.git;a=shortlog;h=refs/heads/1.10|
 |named tags|✅|on gitbox and github||
 |statistics on commits and people|✅|additions and deletions||
 |metrics on code/commits||||
@@ -52,7 +52,7 @@ Apache projects
 |Name|Existence|Comment|Link|
 |---|---|---|
 |number of contributors|||
-|commiters|||
+|committers|||
 |code size|||
 |license|❔|Apache License|
 |used technologies|✅|Apache-projects -> Programming language|

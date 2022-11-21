@@ -10,6 +10,8 @@ Comparison of OSS portals
 |[LaunchPad](LaunchPad)|GIT, BZR|✅|> 44000|
 |[Apache projects](Apache)|GIT|✅|> 350|
 |[Bitbucket](Bitbucket)|GIT|✅|not known||
+|[Redmine](Redmine)|GIT|✅|not known(a lot)||
+|[Assembla](Assembla)|GIT, SVB, Perforce|✅|10000||
 
 ❗️**Link to metrics:** https://medium.com/swlh/software-development-metrics-automation-using-github-actions-30a51fd56df0
 

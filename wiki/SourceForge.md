@@ -17,7 +17,7 @@ SourceForge
 
 ## Structure
 
-**Comment:** SourceForge it is more for communication with users. Some projects have a link to GitHub.
+**Comment:** SourceForge is more for communication with users. Some projects have a link to GitHub.
 
 **Number of live projects:** approx. 24000
 
@@ -30,7 +30,7 @@ SourceForge
 |estimates|❌||
 |planned/real deadline|❌||
 |subtasks/related issues|❌||
-|paring of commits|❌||
+|pairing of commits|❌||
 |issue change history including people assignment|✅|https://sourceforge.net/p/mingw/bugs/2363/|
 |custom categories/tags|✅|Categories|
 |status configuration/workflow|❌||
@@ -55,7 +55,7 @@ SourceForge
 |Name|Existence|Comment|
 |---|---|---|
 |number of contributors|✅|only autors|
-|commiters|❔||
+|committers|❔||
 |code size|✅|the size of individual files can be found|
 |license|✅|main page of the project |
 |download statistics|✅|https://sourceforge.net/projects/mingw/files/stats/timeline|
@@ -82,7 +82,7 @@ SourceForge
 * **Code Lifecycle** - Releases are probably not visible, but you can view Activity (how often commits/comments/tickets are made)
 * **Code Quality** - If the project uses labels, the ratio of bugs and PR can be calculated.
 * **Team Dynamics** - Activity
-* **Project Health** - Number of new ticets can be calculated.
+* **Project Health** - Number of new tickets can be calculated.
 
 ### Legend
 

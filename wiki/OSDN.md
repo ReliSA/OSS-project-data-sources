@@ -37,7 +37,7 @@ OSDN (formerly SourceForge.JP) is a web-based collaborative development environm
 |estimates|❌||
 |planned/real deadline| ✅|due date in milestones|https://osdn.net/docs/TicketAdmin#h2-Milestone.20Management |
 |subtask/related issues|❌||
-|paring of commits|❌||
+|pairing of commits|❌||
 |issue change history including people assignment|✅|Ticket History|
 |custom category/labels|✅|Components|https://osdn.net/docs/TicketAdmin#h2-Component.20Manager |
 |status configuration/workflow|❌|||
@@ -62,7 +62,7 @@ OSDN (formerly SourceForge.JP) is a web-based collaborative development environm
 |Name|Existence|Comment|Link|
 |---|---|---|---|
 |number of contributors|✅||https://osdn.net/projects/mingw/devel/|
-|commiters|✅||https://osdn.net/projects/mingw/devel/|
+|committers|✅||https://osdn.net/projects/mingw/devel/|
 |code size|❌||
 |license|✅|main page of the project - Software Map|
 |ticket statistics|✅|priority, open time, milestone, owner|

@@ -40,7 +40,7 @@ for bug in bugs:
 |estimates|❌||
 |planned/real deadline|❌||
 |subtasks/related issues|✅|Related branches a Related bugs |
-|paring of commits|❔||
+|pairing of commits|❔||
 |issue change history including people assignment|✅|activity log||
 |custom categories/tags|❔||
 |status configuration/workflow|❌||
@@ -65,7 +65,7 @@ for bug in bugs:
 |Name|Existence|Comment|
 |---|---|---|
 |number of contributors|✅|Top contributors|
-|commiters|✅||
+|committers|✅||
 |code size|❌||
 |license|✅|in project Overview|
 |used technologies|❌||

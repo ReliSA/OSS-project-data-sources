@@ -48,7 +48,7 @@ Showing 30 of 231 open issues in github/hub
 |estimates|❌|
 |planned/real deadline|✅|Milestones due date|https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones|
 |subtasks/related issues|✅|markdown checklist pod issue/[milestone/labels]|https://help.zenhub.com/support/solutions/articles/43000010341-an-intro-to-zenhub-epics|
-|paring of commits|✅||https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors|
+|pairing of commits|✅||https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors|
 |issue change history including people assignment|✅||https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users|
 |custom categories/tags|✅|topics | https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics|
 |status configuration/workflow|✅||https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions |
@@ -73,7 +73,7 @@ Showing 30 of 231 open issues in github/hub
 |Name|Existence|Comment|Link|
 |---|---|---|
 |number of contributors|✅|can be found on the main project page as Contributors|
-|commiters|✅|can be found in Insights -> Pulse|
+|committers|✅|can be found in Insights -> Pulse|
 |code size|✅|https://chrome.google.com/webstore/detail/github-repository-size/apnjnioapinblneaedefcnopcjepgkci|
 |licens|✅|can be found on the main project page of the project|
 |used technologies|✅|can be found on the main project page of the project as Languages|
@@ -89,7 +89,7 @@ Showing 30 of 231 open issues in github/hub
 |internal mailing list|❌||
 |ci/cd pipeline|✅|https://resources.github.com/ci-cd/#examples|
 |release hosting|✅|https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages|
-|can be found on the main project page of the project|✅|https://pages.github.com|
+|product website|✅|https://pages.github.com|
 |forum nebo Q&A|✅|https://docs.github.com/en/discussions|
 |integration with VCS and ITS|❔ |
 

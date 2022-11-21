@@ -29,7 +29,7 @@ GitLab
 |estimates|✅||https://docs.gitlab.com/ee/user/project/time_tracking.html |
 |planned/real deadline|✅||https://docs.gitlab.com/ee/user/project/time_tracking.html |
 |subtasks/related issues|✅||https://docs.gitlab.com/ee/user/project/issues/related_issues.html |
-|paring of commits|❌|A commit can only have one author and one committer. But multiple people could have contributed to the final squashed commit. This proposal is to append these fields to the end of the commit message.|https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html|
+|pairing of commits|❌|A commit can only have one author and one committer. But multiple people could have contributed to the final squashed commit. This proposal is to append these fields to the end of the commit message.|https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html|
 |issue change history including people assignment|✅||https://docs.gitlab.com/ee/user/project/issues/multiple_assignees_for_issues.html|
 |custom categories/tags|✅||https://docs.gitlab.com/ee/user/project/labels.html |
 |status configuration/workflow|✅||https://docs.gitlab.com/ee/ci/pipelines/ |
@@ -54,7 +54,7 @@ GitLab
 |Name|Existence|Comment|Link|
 |---|---|---|
 |number of contributors|✅|Project information -> Members|
-|commiters|✅|Project information -> Members|
+|committers|✅|Project information -> Members|
 |code size|✅|main page of the project|
 |license|❔||
 |technology used|✅|In Analytics -> Repository|
