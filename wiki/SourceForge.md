@@ -17,7 +17,7 @@ SourceForge
 
 ## Structure
 
-**Comment:** SourceForge is more for communication with users. Some projects have a link to GitHub.
+**Comment:** SourceForge is used mostly for communication with users. Some projects have a link to GitHub.
 
 **Number of live projects:** approx. 24000
 
@@ -57,9 +57,9 @@ SourceForge
 |number of contributors|✅|only autors|
 |committers|❔||
 |code size|✅|the size of individual files can be found|
-|license|✅|main page of the project |
+|licenses|✅|main page of the project |
 |download statistics|✅|https://sourceforge.net/projects/mingw/files/stats/timeline|
-|used technologies|❔||
+|technologies used|❔||
 |product health from ci/cd pipeline|❌||
 |category|✅|main page of project|
 

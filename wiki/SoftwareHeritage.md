@@ -1,33 +1,33 @@
-Assembla
+Software Heritage
 ===========
 
-**Web:** https://get.assembla.com/
+**Web:** https://www.softwareheritage.org/
 
-**Version control system:** GIT, SVN, Perforce 
+**Version control system:** GIT, Subversion, Mercurial 
 
-**Number of projects:** [> 10 000]
+**Number of projects:** [> 188 mil]
 
 **API:**
 
-* [Assembla](https://api-docs.assembla.cc/) 
+* [SoftwareHeritage](https://docs.softwareheritage.org/devel/getting-started/api.html) 
 
 **Open source projects:**
 
-* [Open Source Software](https://github.com/assembla)
+* [Open Source Software](https://archive.softwareheritage.org/)
 
 ## Structure
 
 
-**Number of live projects:** a lot - 10mil code commits per month (https://get.assembla.com/)
+**Number of live projects:** plenty
 
 ### Issue tracking system
 
 |Name|Existence|Comment|
 |---|---|---|
-|bug/feature/task/|✅|https://get.assembla.com/projects/|
-|priority/severity|✅|https://app.assembla.com/wiki/show/rameno/TracTickets|
-|estimates|✅|Estimates can be shown in Time, Points, Size (Small, Medium, Large) or not be shown|https://articles.assembla.com/en/articles/748173-add-estimates-field-to-tickets|
-|planned/real deadline|✅|https://www.g2.com/products/assembla/reviews|
+|bug/feature/task/|✅|https://docs.softwareheritage.org/devel/|
+|priority/severity|✅|https://www.softwaretestinghelp.com/how-to-set-defect-priority-and-severity-with-defect-triage-process/|
+|estimates|✅||https://docs.softwareheritage.org/devel/|
+|planned/real deadline|✅||
 |subtasks/related issues|✅|By relating tickets|https://articles.assembla.com/en/articles/1060455-use-ticket-relationships-to-enhance-your-workflow|
 |pairing of commits|❔||
 |issue change history including people assignment|✅||

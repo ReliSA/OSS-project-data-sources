@@ -53,8 +53,8 @@ Redmine
 |number of contributors|✅|https://www.redmine.org/projects/redmine/wiki/Contribute|
 |committers|✅||
 |code size|❌||
-|license|✅|Can be added ...project/licence|
-|used technologies|❔||
+|licenses|✅|Can be added ...project/licence|
+|technologies used|❔||
 
 
 ### Tools

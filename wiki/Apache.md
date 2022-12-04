@@ -7,7 +7,7 @@ Apache projects
 
 **Number of projects:** [> 350](https://projects.apache.org)
 
-**Open source projekcts:**
+**Open source projects:**
 
 * [Jira](https://issues.apache.org/jira/secure/BrowseProjects.jspa?selectedCategory=all&selectedProjectType=all) 
 * [Apache projects](https://projects.apache.org/projects.html)
@@ -22,7 +22,7 @@ Apache projects
 
 |Name|Existence|Comment|Link|
 |---|---|---|---|
-|bug/feature/task/|✅|**Bugzilla:** bugss **Jira:** Bug/Task/Epic/Improvement/New Feature|https://issues.apache.org/jira/projects/AGE2/issues/AGE2-328?filter=allopenissues a https://bz.apache.org/bugzilla/buglist.cgi?order=changeddate%20DESC%2Cbug_status%2Cpriority%2Cassigned_to%2Cbug_id&product=Ant&query_format=advanced|
+|bug/feature/task/|✅|**Bugzilla:** bugs **Jira:** Bug/Task/Epic/Improvement/New Feature|https://issues.apache.org/jira/projects/AGE2/issues/AGE2-328?filter=allopenissues a https://bz.apache.org/bugzilla/buglist.cgi?order=changeddate%20DESC%2Cbug_status%2Cpriority%2Cassigned_to%2Cbug_id&product=Ant&query_format=advanced|
 |priority/severity|✅|Bugzilla and Jira||
 |estimates|❌|||
 |planned/real deadline|❌|||
@@ -54,8 +54,8 @@ Apache projects
 |number of contributors|||
 |committers|||
 |code size|||
-|license|❔|Apache License|
-|used technologies|✅|Apache-projects -> Programming language|
+|licenses|❔|Apache License|
+|technologies used|✅|Apache-projects -> Programming language|
 
 [GitHub](https://bitbucket.org/pwnsauce8/kiv-opswi/wiki/GitHub)
 
@@ -75,8 +75,8 @@ Apache projects
 
 * **Code Lifecycle** - you can find out how often releases are made in each project on [Apache projects](https://projects.apache.org/projects.html)
 * **Code Quality** - the bug in Jire and releases ratio can be calculated 
-* **Team Dynamics** - In Insights Github you can see how many commits are made per week
-* **Project Health** - In Insights Github you can see how many contributors added commits
+* **Team Dynamics** - In GitHub Insights you can see how many commits are made per week
+* **Project Health** - In GitHub Insights you can see how many contributors added commits
 
 ### Legend
 

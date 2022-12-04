@@ -67,8 +67,8 @@ for bug in bugs:
 |number of contributors|✅|Top contributors|
 |committers|✅||
 |code size|❌||
-|license|✅|in project Overview|
-|used technologies|❌||
+|licenses|✅|in project Overview|
+|technologies used|❌||
 |product health from ci/cd pipeline|❌||
 
 ### Tools

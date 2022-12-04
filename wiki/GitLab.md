@@ -57,7 +57,7 @@ GitLab
 |committers|✅|Project information -> Members|
 |code size|✅|main page of the project|
 |license|❔||
-|technology used|✅|In Analytics -> Repository|
+|technologies used|✅|In Analytics -> Repository|
 |product health from ci/cd pipeline|✅|Analytics -> CI/CD analytics|
 
 * https://docs.gitlab.com/ee/user/analytics/

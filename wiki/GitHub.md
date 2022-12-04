@@ -75,8 +75,8 @@ Showing 30 of 231 open issues in github/hub
 |number of contributors|✅|can be found on the main project page as Contributors|
 |committers|✅|can be found in Insights -> Pulse|
 |code size|✅|https://chrome.google.com/webstore/detail/github-repository-size/apnjnioapinblneaedefcnopcjepgkci|
-|licens|✅|can be found on the main project page of the project|
-|used technologies|✅|can be found on the main project page of the project as Languages|
+|licenses|✅|can be found on the main project page of the project|
+|technologies used|✅|can be found on the main project page of the project as Languages|
 
 * https://github.com/morucci/monocle
 * https://github.com/morucci/repoxplorer

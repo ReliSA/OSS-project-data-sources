@@ -11,11 +11,11 @@ OSDN (formerly SourceForge.JP) is a web-based collaborative development environm
 
 **API:**
 
-* [OSDN API](https://osdn.net/projects/osdn-codes/wiki/APIGuide) - API is in development process
+* [OSDN API](https://osdn.net/projects/osdn-codes/wiki/APIGuide) - API is in development
 
 **Pros:** 
 
-* _PROJECT RANKING_ and _DEVELOPER RANKING_ exist, where are shown the "best" projects
+* _PROJECT RANKING_ and _DEVELOPER RANKING_ exist, where are shown the "top" projects
 
 **Open source projects:**
 
@@ -64,11 +64,11 @@ OSDN (formerly SourceForge.JP) is a web-based collaborative development environm
 |number of contributors|✅||https://osdn.net/projects/mingw/devel/|
 |committers|✅||https://osdn.net/projects/mingw/devel/|
 |code size|❌||
-|license|✅|main page of the project - Software Map|
+|licenses|✅|main page of the project - Software Map|
 |ticket statistics|✅|priority, open time, milestone, owner|
 |milestones statistics|✅|submit date, due date, open tickets, closed tickets, progress|
 |downloads statistics|✅||https://osdn.net/projects/mingw/stats/?report=last_30&default=projectview |
-|used technologies|✅|System Requirements + programming lang|`https://osdn.net/projects/[Project Name]/releases/`|
+|technologies used|✅|System Requirements + programming lang|`https://osdn.net/projects/[Project Name]/releases/`|
 |product health from ci/cd pipeline|❌||
 
 * `http://osdn.net/projects/[projectname]/stats/` - https://osdn.net/projects/mingw/stats/?report=last_30&default=projectview
