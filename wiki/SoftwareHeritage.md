@@ -25,7 +25,8 @@ The Vault is the service in charge of reconstructing parts of the archive as sel
 The deposit allows a client (a repository, e.g. HAL) to submit software source archives and its associated metadata to the SWH archive. Metadata can be also submitted referencing a repository url (origin) or a SWHID.
 The SWH archive harvests source code from different sources and converts all the source code into a single and universal data structure.
 
-{{image swh-dataflow-merkle-1.png}}
+
+![Diagram](/swh-dataflow-merkle-1.png "Diagram of Software Heritage")
 
 **Number of live projects:** plenty
 
@@ -50,7 +51,7 @@ The SWH archive harvests source code from different sources and converts all the
 |Name|Existence|Comment|link|
 |---|---|---|---|
 |git flow|✅|||
-|complete branch history|✅|https://archive.softwareheritage.org/browse/origin/git/linux/?branch_sort=descending|Source Code tab for that project and clicking on the Branches tab|
+|complete branch history|✅|Source Code tab for that project and clicking on the Branches tab|https://archive.softwareheritage.org/browse/origin/git/linux/?branch_sort=descending|
 |named tags|✅| in the "Tags" section of the project page|
 |statistics on commits and people|✅|using the SoftwareHeritage dashboard|
 |metrics on code/commits|Tickets tool -> the Metrics sub-tab||
@@ -82,7 +83,7 @@ The SWH archive harvests source code from different sources and converts all the
 |release hosting|✅||
 |product website|❌||
 |forum or Q&A|❌||
-|integration with VCS and ITS|❔||
+|integration with VCS and ITS|❌||
 
 ### Metrics
 
