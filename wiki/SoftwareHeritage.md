@@ -26,7 +26,7 @@ The deposit allows a client (a repository, e.g. HAL) to submit software source a
 The SWH archive harvests source code from different sources and converts all the source code into a single and universal data structure.
 
 
-![Diagram](/swh-dataflow-merkle-1.png "Diagram of Software Heritage")
+![Diagram](swh-dataflow-merkle-1.png "Diagram of Software Heritage")
 
 **Number of live projects:** plenty
 
