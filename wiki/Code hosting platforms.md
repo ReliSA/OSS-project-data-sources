@@ -12,6 +12,7 @@ Comparison of OSS portals
 |[Bitbucket](Bitbucket)|GIT|✅|not known||
 |[Redmine](Redmine)|GIT|✅|not known(a lot)||
 |[Assembla](Assembla)|GIT, SVB, Perforce|✅|> 10000||
+|[SoftwareHeritage](SoftwareHeritage)|GIT, Subversion, Mercurial|✅|> 188 mil||
 
 ❗️**Link to metrics:** https://medium.com/swlh/software-development-metrics-automation-using-github-actions-30a51fd56df0
 
