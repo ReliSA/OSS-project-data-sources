@@ -5,87 +5,87 @@ SourceForge
 
 **Version control system:** GIT, Hg, SVN
 
-**Počet projektů:** [> 500 tisíc](https://sourceforge.net/about)
+**Number of projects:** [> 500 000](https://sourceforge.net/about)
 
 **API:**
 
-* [SourceForge Support](https://sourceforge.net/p/forge/documentation/API/) - načítání informace o projektech a jejich tiketech
+* [SourceForge Support](https://sourceforge.net/p/forge/documentation/API/) - loading information about projects and their tickets
 
-**Open source projekty:**
+**Open source projects:**
 
 * [Open Source Software](https://sourceforge.net/directory/os:windows/)
 
-## Struktura
+## Structure
 
-**Poznámka:** SourceForge je spíš pro komunikaci s uživateli. Některé projekty májí odkáz na GitHub.
+**Comment:** SourceForge is used mostly for communication with users. Some projects have a link to GitHub.
 
-**Počet živých projektů:** cca 24000
+**Number of live projects:** approx. 24000
 
 ### Issue tracking system
 
-|Název|Existence|Poznámka|
+|Name|Existence|Comment|
 |---|---|---|
 |bug/feature/task/|✅|https://sourceforge.net/p/mingw-w64/bugs/923/ |
 |priority/severity|✅|https://sourceforge.net/p/mingw-w64/bugs/923/ |
 |estimates|❌||
 |planned/real deadline|❌||
-|podúkoly/related issues|❌||
-|spárování commitů|❌||
-|historie změn issue vč. people assignment|✅|https://sourceforge.net/p/mingw/bugs/2363/|
-|vlastní kategorie/štítky|✅|Categories|
-|konfigurace stavů/workflow|❌||
-|iterace/fáze/milestones/releases|milestones|https://sourceforge.net/p/wsclean/tickets/milestone/3.0/|
-|role nebo jiné charakteristiky lidí|✅|https://sourceforge.net/p/forge/documentation/Project%20Permissions/|
+|subtasks/related issues|❌||
+|pairing of commits|❌||
+|issue change history including people assignment|✅|https://sourceforge.net/p/mingw/bugs/2363/|
+|custom categories/tags|✅|Categories|
+|status configuration/workflow|❌||
+|iterations/phases/milestones/releases|milestones|https://sourceforge.net/p/wsclean/tickets/milestone/3.0/|
+|roles or other characteristics of people|✅|https://sourceforge.net/p/forge/documentation/Project%20Permissions/|
 
 ### Version management system
 
-|Název|Existence|Poznámka|Odkaz|
+|Name|Existence|Comment|link|
 |---|---|---|---|
 |git flow|✅|rebase|http://supercollider.sourceforge.net/wiki/index.php/Developer_cheatsheet_for_git|
-|kompletní historie větví|✅||https://sourceforge.net/p/mingw/msys2-runtime/ci/b4e294a0be4f83c5c27b8ad2cdc3a24789a260ce/log/?path= |
+|complete branch history|✅||https://sourceforge.net/p/mingw/msys2-runtime/ci/b4e294a0be4f83c5c27b8ad2cdc3a24789a260ce/log/?path= |
 |named tags|❔||
-|statistiky na commitech a lidech|❔||
-|metriky na kódu/commitech|❔||
-|merge requests (v historii dohledatelné)|✅||
-|code review (v historii dohledatelné)|❔||
+|statistics on commits and people|❔||
+|metrics on code/commits|❔||
+|merge requests (traceable in history)|✅||
+|code review (traceable in history)|❔||
 
 
-### Projekty
+### Projects
 
-|Název|Existence|Poznámka|
+|Name|Existence|Comment|
 |---|---|---|
-|počet přispěvatelů|✅|pouze autory|
-|commiterů|❔||
-|code size|✅|lze zjistit velikost jednotlivých souborů|
-|licence|✅|hlavní stránka projektu |
+|number of contributors|✅|only autors|
+|committers|❔||
+|code size|✅|the size of individual files can be found|
+|licenses|✅|main page of the project |
 |download statistics|✅|https://sourceforge.net/projects/mingw/files/stats/timeline|
-|použité technologie|❔||
-|zdraví produktu z ci/cd pipeline|❌||
-|categorie|✅|hlavní stránka projektu |
+|technologies used|❔||
+|product health from ci/cd pipeline|❌||
+|category|✅|main page of project|
 
 * https://sourceforge.net/p/wsclean/tickets/stats/
 
-### Nástroje
+### Tools
 
-|Název|Existence|Poznámka|
+|Name|Existence|Comment|
 |---|---|---|
 |wiki|✅|https://sourceforge.net/p/forge/documentation/Wiki/ |
 |mailing list|✅|https://sourceforge.net/p/forge/documentation/Mailing%20Lists/ |
 |ci/cd pipeline|❌||
 |release hosting|❔||
-|produktový web|✅|https://sourceforge.net/p/forge/documentation/Project%20Web%20Services/#project-web |
-|fórum nebo Q&A|✅ |https://sourceforge.net/p/forge/documentation/Discussion/ |
-|integrace s VCS a ITS|❔||
+|product website|✅|https://sourceforge.net/p/forge/documentation/Project%20Web%20Services/#project-web |
+|forum or Q&A|✅ |https://sourceforge.net/p/forge/documentation/Discussion/ |
+|integration with VCS and ITS|❔||
 
-### Metriky 
+### Metrics
 
-* **Code Lifecycle** - Releasy asi nejsou vidět, ale lze prohlédnout Activity (jak často se dělají commity/commenty/tickety)
-* **Code Quality** - V případě, že projekt používá labely, lze spočítat poměr bugů a PR.
+* **Code Lifecycle** - Releases are probably not visible, but you can view Activity (how often commits/comments/tickets are made)
+* **Code Quality** - If the project uses labels, the ratio of bugs and PR can be calculated.
 * **Team Dynamics** - Activity
-* **Project Health** - lze spočítat počet nových ticketů 
+* **Project Health** - Number of new tickets can be calculated.
 
-### Legenda
+### Legend
 
-* ✅ - existuje
-* ❌ - neexistuje
-* ❔ - nevím
+* ✅ - exists
+* ❌ - does not exist
+* ❔ - not known
