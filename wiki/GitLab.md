@@ -71,7 +71,7 @@ GitLab
 |ci/cd pipeline|✅|https://docs.gitlab.com/ee/ci/ |
 |release hosting|❔||
 |product website|✅|https://docs.gitlab.com/ee/user/project/pages/ |
-|forum nebo Q&A|❌||
+|forum or Q&A|❌||
 |integration with VCS and ITS|❔||
 
 ### Metrics
