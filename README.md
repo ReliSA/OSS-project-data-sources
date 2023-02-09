@@ -61,3 +61,4 @@ The less common ones:
 ### References
 
 * GitLab API: https://docs.gitlab.com/ee/api/ (mainly the projects part, https://docs.gitlab.com/ee/api/projects.html)
+* GitHub API: https://docs.github.com/rest (mainly the projects part, https://docs.github.com/en/rest/projects)
