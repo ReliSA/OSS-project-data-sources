@@ -25,8 +25,8 @@ base_api_url = "https://api.github.com/"
 issues_api_url = "https://api.github.com/search/issues?q=repo:{0[owner]}/{0[repo-name]}+type:issue"
 open_issues_api_url = "https://api.github.com/search/issues?q=repo:{0[owner]}/{0[repo-name]}+type:issue+state:open"
 closed_issues_api_url = "https://api.github.com/search/issues?q=repo:{0[owner]}/{0[repo-name]}+type:issue+state:closed"
-members_api_url = "repositories/{0[id]}/members"
-contributors_api_url = "https://api.github.com/search/issues?q=repo:{0[owner]}/{0[repo-name]}+type:contributors"
+members_api_url = "https://api.github.com/search/issues?q=repo:{0[owner]}/{0[repo-name]}+type:members"
+contributors_api_url = "https://api.github.com/repos/{0[owner]}/{0[repo-name]}/contributors"
 
 projects_api_url = "search/repositories?q=page=1&per_page={0[ProjectsPerPage]}&last_activity_after={0[DateLimit]}&order_by=id&sort=asc&"
 merge_requests_api_url = "projects/{0[id]}/merge_requests"
@@ -124,6 +124,8 @@ def fill_project(obj: dict):
     p['url'] = obj['html_url']
     p['created-at'] = obj['created_at']  # datetime strings
     p['last-active-at'] = obj['updated_at']  # (convert do timestamp?)
+    # "stars" are in project data (not like gitlab)
+    p['stars'] = obj['stargazers_count']
 
     if 'forks_count' in obj:
         p['forks'] = obj['forks_count']
@@ -139,8 +141,10 @@ def fill_project(obj: dict):
     if (p['license'] == ""):
         p['license'] = get_scraped_value(p['url'], _cfg['GitHubLicenseXPath'])
 
-    # "stars" are not in project data
-    p['stars'] = get_scraped_value(p['url'], _cfg['GitHubStarsCountXPath'])
+    # if "stars" are not in project data (doesn't happen often)
+    if (p['stars'] == -1):
+        p['stars'] = get_scraped_value(p['url'], _cfg['GitHubStarsCountXPath'])
+
     # just to be sure, in case project data lacked this for some reason
     if (p['forks'] == -1):
         # print('no forks in data, scraping', file=sys.stderr)
@@ -152,7 +156,8 @@ def fill_project(obj: dict):
     # ^^^ constructs the API URL from the template strings and project's ID read above
     p['issues-open'] = get_api_value(open_issues_api_url.format(p), _cfg['GitHubAccessToken'])
     p['issues-closed'] = get_api_value(closed_issues_api_url.format(p), _cfg['GitHubAccessToken'])
-    p['contributors'] = get_api_value(contributors_api_url.format(p), _cfg['GitHubAccessToken'])
+
+    p['contributors'] = get_contributors_count(contributors_api_url.format(p), _cfg['GitHubAccessToken'])
 
     return p
 
@@ -162,7 +167,6 @@ def get_api_value(url: str, token: str):
     Query the data obtained from API using JSONPath expressions.
     Returns the first value matching the given query.
     """
-
 
     global _cache
 
@@ -182,6 +186,31 @@ def get_api_value(url: str, token: str):
 
     # print("apiquery: obtained value: " + str(res))
     return total_count
+
+def get_contributors_count(url: str, token: str):
+    """
+    API only returns a maximum of 30 contributors per page.
+    Goes through all the pages and counts the contributors.
+    Returns the total count of contributors.
+    """
+
+    contributors_count = 0
+    while url:
+
+        (json_data,links) = get_json(url,token)
+        contributors_count += len(json_data)
+
+        if links:
+            next_url = None
+            for link in links.split(","):
+                if "rel=\"next\"" in link:
+                    next_url = link[link.index("<") + 1:link.index(">")]
+                    break
+            url = next_url
+        else:
+            break
+
+    return contributors_count
 
 
 def get_scraped_value(url: str, xpathq: str):
@@ -232,13 +261,14 @@ def get_json(url: str, token: str, *, use_mock=False):
     json_data: str = ""
 
     # print("get_json: from url " + url)
-    req = requests.get(url, headers={"Accept": "application/json", "Authorization": "Bearer %(GitHubAccessToken)s" % {'GitHubAccessToken': token}})
+    req = requests.get(url, headers={"Accept": "application", "Authorization": "Bearer %(GitHubAccessToken)s" % {'GitHubAccessToken': token}})
 
     if (req.status_code != 200):
         print("request doesn't equal to 200")
         return ([], {})
     json_data = req.json()
-    links = req.links
+    #links = req.links
+    links = req.headers.get("Link", None)
 
     # print("get_json: headers in response: " + str(req.headers))
     # print("get_json: links in response: " + str(req.links))
