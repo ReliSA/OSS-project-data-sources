@@ -25,18 +25,17 @@ base_api_url = "https://api.github.com/"
 issues_api_url = "https://api.github.com/search/issues?q=repo:{0[owner]}/{0[repo-name]}+type:issue"
 open_issues_api_url = "https://api.github.com/search/issues?q=repo:{0[owner]}/{0[repo-name]}+type:issue+state:open"
 closed_issues_api_url = "https://api.github.com/search/issues?q=repo:{0[owner]}/{0[repo-name]}+type:issue+state:closed"
-members_api_url = "https://api.github.com/search/issues?q=repo:{0[owner]}/{0[repo-name]}+type:members"
 contributors_api_url = "https://api.github.com/repos/{0[owner]}/{0[repo-name]}/contributors"
 
-projects_api_url = "search/repositories?q=page=1&per_page={0[ProjectsPerPage]}&last_activity_after={0[DateLimit]}&order_by=id&sort=asc&"
+projects_api_url = "search/repositories?q=page=1&per_page={0[ProjectsPerPage]}&q=pushed:>{0[DateLimit]}&order_by=id&sort=asc&"
 merge_requests_api_url = "projects/{0[id]}/merge_requests"
 releases_api_url = "projects/{0[id]}/releases"
 
 # URLs of web pages for scraping
 issues_url = "/issues"
-members_url = "-/project_members"
-contributors_url = "-/graphs/master"
-merge_requests_url = "-/merge_requests"
+topics_url = "-/topics"
+contributors_url = "-/contributors"
+teams_url = "-/teams"
 
 # caching of things obtained just before
 _cache : dict = {
