@@ -31,8 +31,10 @@ PROJECT : dict = {
     "issues-closed" : -1,
     "stars" : -1,
     "forks" : -1,
-    "releases" : -1
-
+    "releases" : -1,
+    "components" : -1,   # jira
+    "versions" : -1,     # jira
+    "archived" : -1,     # jira
 }
 
 ### Here the data of projects, scraped from the platforms, are stored
@@ -69,7 +71,6 @@ def add_prj(p: dict):
     Adds a project's data record to the set.
     """
     _projects.append(p)
-
 
 def prj2csv(file):
     """
