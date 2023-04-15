@@ -83,10 +83,10 @@ def read_projects(use_issue_num_limit: bool = True, use_only_starred: bool = Tru
         if response.status_code != 200:
             raise Exception(f"Failed to retrieve Apache projects: {response.status_code}")
 
-        projects = response.json()
-
+        #projects = response.json()
+        (json_data, links) = get_json(url)
         limit = 0
-        for pr in projects:
+        for pr in json_data:
             print('parsing prj ' + str(pr['id']), file=sys.stderr)
             prj = fill_project(pr)
             limit += 1
@@ -175,6 +175,32 @@ def get_scraped_value(url: str, xpathq: str):
     # print("scraping: obtained value: " + str(res))
     return res
 
+def get_json(url: str, use_mock=False):
+    """
+    Gets data on projects from Jira API.
+    Returns a tuple (parsed JSON payload, dictionary-of-links from Link header)
+    """
+
+    if (use_mock):
+        print("get_json: using mock project data for testing", file=sys.stderr)
+        return (read_json(), {})
+
+    json_data: str = ""
+
+    # print("get_json: from url " + url)
+    req = requests.get(url)
+
+    if (req.status_code != 200):
+        print("request status code doesn't equal to 200!")
+        return ([], {})
+
+    json_data = req.json()
+    #links = req.links
+    links = req.headers.get("Link", None)
+
+    print("get_json: headers in response: " + str(req.headers))
+    print("get_json: links in response: " + str(req.links))
+    return (json_data, links)
 
 def read_json():
     """

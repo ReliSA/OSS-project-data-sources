@@ -229,6 +229,7 @@ def get_scraped_value(url: str, xpathq: str):
         # print("scraping: fresh request to url:" + url)
         req = requests.get(url)
         if (req.status_code != 200):
+            print("RESPONSE IS NOT 200!")
             return None
         doc = html.document_fromstring(req.text)
 
@@ -249,7 +250,7 @@ def get_scraped_value(url: str, xpathq: str):
 
 def get_json(url: str, token: str, *, use_mock=False):
     """
-    Gets data on projects from gitlab API.
+    Gets data on projects from github API.
     Returns a tuple (parsed JSON payload, dictionary-of-links from Link header)
     """
 
@@ -263,7 +264,7 @@ def get_json(url: str, token: str, *, use_mock=False):
     req = requests.get(url, headers={"Accept": "application", "Authorization": "Bearer %(GitHubAccessToken)s" % {'GitHubAccessToken': token}})
 
     if (req.status_code != 200):
-        print("request doesn't equal to 200")
+        print("request status code doesn't equal to 200!")
         return ([], {})
     json_data = req.json()
     #links = req.links
