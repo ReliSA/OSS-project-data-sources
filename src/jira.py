@@ -19,7 +19,6 @@ import data
 _cfg: dict = {}
 
 # URLs for API access
-# /repos/{owner}/{repo}
 base_api_url = "https://issues.apache.org/jira/rest/api/2/project"
 project_api_url = "https://issues.apache.org/jira/rest/api/2/project/{project_id}"
 
@@ -35,7 +34,7 @@ _ApiMockDataFilePath = ""
 
 def scrape(cfg: dict):
     """
-    Runs the GitHub.com platform scraping and
+    Runs the Jira.com platform scraping and
     saves the results into the `data` module structures.
     """
 
@@ -48,7 +47,7 @@ def scrape(cfg: dict):
 
 def read_projects(use_issue_num_limit: bool = True, use_only_starred: bool = True):
     """ Fills in the 'projects' list in 'data' module from the
-        GitHub-provided project data, as obtained from the API.
+        Jira-provided project data, as obtained from the API.
     """
 
     global _cfg
@@ -92,7 +91,7 @@ def read_projects(use_issue_num_limit: bool = True, use_only_starred: bool = Tru
             limit += 1
 
             data.add_prj(prj)
-            if limit > 5:
+            if limit > (int)(_cfg['LimitProjects']):
                 break
             time.sleep(int(_cfg['SleepTime']))  # give the API a break
 
@@ -133,8 +132,8 @@ def get_component_count(project_id):
     response = requests.get(url)
     print(response.encoding, file=sys.stderr)
     if response.status_code == 200:
-        data = response.json()
-        return len(data.get("components", []))
+        res = response.json()
+        return len(res.get("components", []))
     else:
         print(f"Error: {response.status_code}")
         return None
@@ -187,7 +186,6 @@ def get_json(url: str, use_mock=False):
 
     json_data: str = ""
 
-    # print("get_json: from url " + url)
     req = requests.get(url)
 
     if (req.status_code != 200):
@@ -195,7 +193,7 @@ def get_json(url: str, use_mock=False):
         return ([], {})
 
     json_data = req.json()
-    #links = req.links
+
     links = req.headers.get("Link", None)
 
     print("get_json: headers in response: " + str(req.headers))
