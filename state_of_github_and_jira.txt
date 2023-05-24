@@ -5,6 +5,12 @@ Several functionalities are handled differently, of course, since github and git
 However, understanding the functionality of one class should be sufficient to understand the other class as well.
 The output is as close as possible to the GitLab output.
 
+Example of github.py output:
+github,169606323,instantpage,instant.page,2019-02-07T16:49:59Z,2023-01-30T12:27:20Z,https://github.com/instantpage/instant.page,https://api.github.com/repos/instantpage/instant.page,MIT License,102,108,89,20,69,,198,
+
+github,314297831,bradleytaunt,1mb-club,2020-11-19T16:00:05Z,2023-01-27T19:03:28Z,https://github.com/bradleytaunt/1mb-club,https://api.github.com/repos/bradleytaunt/1mb-club,MIT License,522,464,0,0,0,330,243,
+
+
 
 JIRA
 
@@ -27,5 +33,9 @@ Care has been taken to be consistent with the github and gitlab classes. However
 Error handling for network issues or unexpected API responses could be added/improved.
 Some parts of the code can be used as placeholders for future functionality.
 
+Example of jira.py output:
+jira,12310505,Garrett Rooney,Abdera,,,https://issues.apache.org/jira/rest/api/2/project/12310505,http://abdera.apache.org,,-1,-1,-1,-1,-1,-1,-1,-1,"(0,)","(9,)","(False,)"
+
+jira,12312121,Ed Coleman,Accumulo,,,https://issues.apache.org/jira/rest/api/2/project/12312121,https://accumulo.apache.org/,,-1,-1,-1,-1,-1,-1,-1,-1,"(32,)","(30,)","(False,)"
 
 CONFIG.INI has been modified with new features.
