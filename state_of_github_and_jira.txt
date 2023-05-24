@@ -1,0 +1,31 @@
+GITHUB
+
+This is a version of the class as similar as possible to the gtilab.py class to maintain program consistency.
+Several functionalities are handled differently, of course, since github and gitlab api are not identical.
+However, understanding the functionality of one class should be sufficient to understand the other class as well.
+The output is as close as possible to the GitLab output.
+
+
+JIRA
+
+This program is capable of extracting project-related data from the Apache Jira Project Management Tool via its API (https://issues.apache.org/jira/rest/api/2/project). 
+
+The program is mainly focused on:
+
+	• Fetching a list of projects from the Jira API.
+	• Parsing the project data from JSON format into dictionaries.
+	• Providing support for pagination by storing and following links from API responses.
+	• Handling response status codes to ensure successful data retrieval.
+	• Making HTTP GET requests to obtain JSON data.
+	• Limiting the number of projects fetched according to the configuration.
+	• Pausing between requests to avoid overwhelming the API.
+	• Retrieving the number of components for a specific project.
+	• Providing the option to use mock data for testing purposes.
+
+Care has been taken to be consistent with the github and gitlab classes. However, Jira (the Jira API options) differs from these tools in several ways.
+
+Error handling for network issues or unexpected API responses could be added/improved.
+Some parts of the code can be used as placeholders for future functionality.
+
+
+CONFIG.INI has been modified with new features.
